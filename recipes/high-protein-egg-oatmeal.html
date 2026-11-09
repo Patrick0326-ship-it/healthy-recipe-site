@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>高蛋白燕麥蛋花粥 - 健康食譜網</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "Recipe",
+    "name": "高蛋白燕麥蛋花粥",
+    "description": "燕麥加雞蛋的黃金組合，搭配濃郁牛奶，蛋白質滿分！早餐或運動後享用，讓你一整天充滿活力。",
+    "prepTime": "PT2M",
+    "cookTime": "PT8M",
+    "totalTime": "PT10M",
+    "recipeYield": "1人份",
+    "nutrition": {
+      "@type": "NutritionInformation",
+      "calories": "320大卡",
+      "proteinContent": "22g",
+      "carbohydrateContent": "38g",
+      "fatContent": "9g",
+      "fiberContent": "5g"
+    },
+    "recipeIngredient": [
+      "燕麥片 80g",
+      "雞蛋 2顆",
+      "牛奶 300ml",
+      "少許鹽或蜂蜜（依個人口味）"
+    ],
+    "recipeInstructions": [
+      {"@type":"HowToStep","text":"將燕麥片與牛奶放入小鍋中，以中小火加熱，邊攪拌邊煮至燕麥軟化，約5分鐘。"},
+      {"@type":"HowToStep","text":"雞蛋打散，備用。"},
+      {"@type":"HowToStep","text":"燕麥煮沸後，緩緩倒入蛋液，以畫圓方式攪拌，形成漂亮蛋花。"},
+      {"@type":"HowToStep","text":"依個人口味加入少許鹽（鹹食）或蜂蜜（甜食），攪拌均勻後盛碗即可享用。"}
+    ],
+    "keywords": "高蛋白,燕麥,蛋花粥,早餐,增肌",
+    "recipeCategory": "早餐",
+    "recipeCuisine": "健康料理"
+  }
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Noto Sans TC', sans-serif; color: #333; background: #f8f9fa; }
+
+    header {
+      background: linear-gradient(135deg, #27ae60, #2ecc71);
+      padding: 18px 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+      position: sticky; top: 0; z-index: 100;
+    }
+    .header-inner { max-width: 1100px; margin: 0 auto; padding: 0 20px; display: flex; align-items: center; justify-content: space-between; }
+    .logo { font-size: 1.5rem; font-weight: 700; color: #fff; text-decoration: none; }
+    .logo span { color: #ffe082; }
+    nav a { color: #fff; text-decoration: none; margin-left: 20px; font-weight: 500; }
+    nav a:hover { opacity: 0.75; }
+
+    .recipe-hero {
+      background: linear-gradient(135deg, #e67e22, #f39c12);
+      padding: 60px 20px 50px;
+      text-align: center;
+      color: #fff;
+    }
+    .recipe-hero .badge { display: inline-block; background: rgba(255,255,255,0.25); color: #fff; padding: 4px 14px; border-radius: 50px; font-size: 0.85rem; margin-bottom: 14px; }
+    .recipe-hero h1 { font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 700; margin-bottom: 12px; }
+    .recipe-hero .desc { font-size: 1.05rem; opacity: 0.92; max-width: 560px; margin: 0 auto 20px; line-height: 1.8; }
+    .hero-meta { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+    .hero-meta-item { background: rgba(255,255,255,0.2); border-radius: 12px; padding: 10px 20px; text-align: center; }
+    .hero-meta-item .hm-label { font-size: 0.75rem; opacity: 0.85; margin-bottom: 2px; }
+    .hero-meta-item .hm-value { font-size: 1rem; font-weight: 700; }
+
+    .main { max-width: 860px; margin: 0 auto; padding: 40px 20px 60px; }
+    .back-link { display: inline-flex; align-items: center; gap: 6px; color: #e67e22; text-decoration: none; font-weight: 500; margin-bottom: 32px; font-size: 0.95rem; }
+    .back-link:hover { text-decoration: underline; }
+
+    .section-card { background: #fff; border-radius: 16px; box-shadow: 0 2px 14px rgba(0,0,0,0.07); padding: 32px; margin-bottom: 28px; }
+    .section-card h2 { font-size: 1.3rem; font-weight: 700; color: #e67e22; margin-bottom: 20px; display: flex; align-items: center; gap: 8px; }
+
+    .nutrition-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+    .nut-item { text-align: center; background: #fff8e1; border-radius: 12px; padding: 16px 8px; }
+    .nut-value { font-size: 1.4rem; font-weight: 700; color: #e67e22; }
+    .nut-label { font-size: 0.78rem; color: #666; margin-top: 4px; }
+
+    .ingredient-list { list-style: none; }
+    .ingredient-list li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; align-items: center; gap: 10px; font-size: 0.95rem; }
+    .ingredient-list li:last-child { border-bottom: none; }
+    .ingredient-list li::before { content: "✅"; font-size: 1rem; flex-shrink: 0; }
+
+    .steps-list { list-style: none; counter-reset: step-counter; }
+    .steps-list li { counter-increment: step-counter; display: flex; gap: 16px; margin-bottom: 20px; align-items: flex-start; }
+    .step-num { background: linear-gradient(135deg, #e67e22, #f39c12); color: #fff; font-size: 0.9rem; font-weight: 700; min-width: 34px; height: 34px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .step-text { font-size: 0.95rem; color: #444; line-height: 1.8; padding-top: 6px; }
+
+    .tip-box { background: #fff8e1; border-left: 4px solid #f9a825; border-radius: 0 12px 12px 0; padding: 16px 20px; margin-top: 8px; }
+    .tip-box p { font-size: 0.9rem; color: #555; line-height: 1.7; }
+
+    .affiliate-box { background: linear-gradient(135deg, #fffde7, #fff8e1); border: 1px solid #ffe082; border-radius: 16px; padding: 28px; margin-bottom: 28px; }
+    .affiliate-box h2 { font-size: 1.2rem; font-weight: 700; color: #e67e22; margin-bottom: 6px; display: flex; align-items: center; gap: 8px; }
+    .affiliate-box .aff-sub { font-size: 0.83rem; color: #888; margin-bottom: 20px; }
+    .aff-products { display: flex; flex-direction: column; gap: 14px; }
+    .aff-item { background: #fff; border-radius: 12px; padding: 16px 18px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 8px rgba(0,0,0,0.06); flex-wrap: wrap; gap: 10px; }
+    .aff-info { display: flex; flex-direction: column; }
+    .aff-name { font-weight: 700; color: #333; font-size: 0.95rem; }
+    .aff-store { font-size: 0.8rem; color: #888; margin-top: 2px; }
+    .aff-price { font-size: 1rem; font-weight: 700; color: #e67e22; }
+    .aff-btn { background: #e67e22; color: #fff; padding: 8px 18px; border-radius: 8px; text-decoration: none; font-size: 0.85rem; font-weight: 700; transition: background 0.2s; white-space: nowrap; }
+    .aff-btn:hover { background: #d35400; }
+    .aff-disclaimer { font-size: 0.78rem; color: #aaa; margin-top: 14px; }
+
+    /* Variants box */
+    .variants { background: #f3f8ff; border-radius: 12px; padding: 20px 24px; margin-top: 8px; }
+    .variants h3 { font-size: 1rem; font-weight: 700; color: #2980b9; margin-bottom: 12px; }
+    .variants ul { list-style: none; }
+    .variants ul li { font-size: 0.9rem; color: #555; padding: 5px 0; display: flex; gap: 8px; }
+    .variants ul li::before { content: "🔄"; }
+
+    footer { background: #2c3e50; color: #aaa; text-align: center; padding: 28px 20px; font-size: 0.85rem; }
+    footer a { color: #2ecc71; text-decoration: none; }
+
+    @media (max-width: 580px) {
+      .nutrition-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a class="logo" href="../index.html">🥦 健康<span>食譜</span>網</a>
+    <nav>
+      <a href="../index.html">首頁</a>
+      <a href="../index.html#recipes">所有食譜</a>
+    </nav>
+  </div>
+</header>
+
+<div class="recipe-hero">
+  <div class="badge">🍳 增肌早餐首選</div>
+  <h1>高蛋白燕麥蛋花粥</h1>
+  <p class="desc">燕麥加雞蛋的黃金組合，搭配濃郁牛奶，蛋白質滿分！早餐或運動後享用，讓你一整天充滿活力。</p>
+  <div class="hero-meta">
+    <div class="hero-meta-item">
+      <div class="hm-label">⏱ 總時間</div>
+      <div class="hm-value">10 分鐘</div>
+    </div>
+    <div class="hero-meta-item">
+      <div class="hm-label">🔥 熱量</div>
+      <div class="hm-value">320 大卡</div>
+    </div>
+    <div class="hero-meta-item">
+      <div class="hm-label">👥 份量</div>
+      <div class="hm-value">1 人份</div>
+    </div>
+    <div class="hero-meta-item">
+      <div class="hm-label">📊 難度</div>
+      <div class="hm-value">簡單</div>
+    </div>
+  </div>
+</div>
+
+<div class="main">
+  <a href="../index.html" class="back-link">← 返回所有食譜</a>
+
+  <div class="section-card">
+    <h2>📊 營養成分（每份）</h2>
+    <div class="nutrition-grid">
+      <div class="nut-item">
+        <div class="nut-value">22g</div>
+        <div class="nut-label">蛋白質</div>
+      </div>
+      <div class="nut-item">
+        <div class="nut-value">38g</div>
+        <div class="nut-label">碳水化合物</div>
+      </div>
+      <div class="nut-item">
+        <div class="nut-value">9g</div>
+        <div class="nut-label">脂肪</div>
+      </div>
+      <div class="nut-item">
+        <div class="nut-value">5g</div>
+        <div class="nut-label">膳食纖維</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-card">
+    <h2>🛒 食材清單</h2>
+    <ul class="ingredient-list">
+      <li>即食燕麥片 80g（非即食款需煮更久）</li>
+      <li>雞蛋 2顆（常溫回溫較佳）</li>
+      <li>全脂牛奶 300ml（可改豆漿或低脂牛奶）</li>
+      <li>鹽 少許（鹹口版）或蜂蜜 1茶匙（甜口版）</li>
+      <li>可選：芝麻、堅果、肉桂粉、藍莓等配料</li>
+    </ul>
+  </div>
+
+  <div class="section-card">
+    <h2>👩‍🍳 烹飪步驟</h2>
+    <ol class="steps-list">
+      <li>
+        <div class="step-num">1</div>
+        <div class="step-text">將燕麥片量好後倒入小鍋或湯鍋，加入牛奶 300ml，以<strong>中小火</strong>加熱，一邊加熱一邊用木匙持續攪拌，防止鍋底燒焦，煮約 <strong>5分鐘</strong>至燕麥充分軟化膨脹。</div>
+      </li>
+      <li>
+        <div class="step-num">2</div>
+        <div class="step-text">另取一碗，將 2 顆雞蛋打入並充分打散，打至蛋白蛋黃完全融合為均勻蛋液，靜置備用。</div>
+      </li>
+      <li>
+        <div class="step-num">3</div>
+        <div class="step-text">當燕麥粥開始微微沸騰，轉<strong>小火</strong>，以畫大圓的方式緩緩將蛋液倒入鍋中，同時用筷子或湯匙輕輕攪動，讓蛋液形成飄逸漂亮的蛋花，約 <strong>30秒</strong>後關火。</div>
+      </li>
+      <li>
+        <div class="step-num">4</div>
+        <div class="step-text">依個人喜好調味：<strong>鹹食版</strong>加入少許鹽拌勻；<strong>甜食版</strong>加入蜂蜜或楓糖漿攪拌，盛入碗中，可依喜好撒上芝麻或堅果增添口感，即可享用。</div>
+      </li>
+    </ol>
+    <div class="tip-box">
+      <p>💡 <strong>小撇步：</strong>倒入蛋液時記得轉小火，避免蛋花變硬結塊。想要更高蛋白版本，可再加入 1 勺乳清蛋白粉一起攪拌！</p>
+    </div>
+    <div class="variants">
+      <h3>🔄 口味變化版本</h3>
+      <ul>
+        <li>加入香蕉丁 + 花生醬（甜版）</li>
+        <li>加入蔥花 + 白胡椒（鹹版）</li>
+        <li>加入冷凍綜合莓果（抗氧化版）</li>
+        <li>以豆漿取代牛奶（全素友好版）</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="affiliate-box">
+    <h2>🛍️ 推薦廚房好物</h2>
+    <p class="aff-sub">以下為聯盟行銷連結，點擊購買不會增加您的費用，感謝支持本站！</p>
+    <div class="aff-products">
+      <div class="aff-item">
+        <div class="aff-info">
+          <span class="aff-name">🍚 多功能電子鍋</span>
+          <span class="aff-store">📦 momo購物網</span>
+        </div>
+        <span class="aff-price">NT$ 1,200</span>
+        <a href="#" class="aff-btn">前往購買</a>
+      </div>
+      <div class="aff-item">
+        <div class="aff-info">
+          <span class="aff-name">⚖️ 電子料理秤</span>
+          <span class="aff-store">🦐 蝦皮購物</span>
+        </div>
+        <span class="aff-price">NT$ 200</span>
+        <a href="#" class="aff-btn">前往購買</a>
+      </div>
+      <div class="aff-item">
+        <div class="aff-info">
+          <span class="aff-name">🫒 冷壓初榨橄欖油</span>
+          <span class="aff-store">📦 momo購物網</span>
+        </div>
+        <span class="aff-price">NT$ 450</span>
+        <a href="#" class="aff-btn">前往購買</a>
+      </div>
+    </div>
+    <p class="aff-disclaimer">* 本站與以上商家有聯盟行銷合作，透過本站連結購買可讓本站獲得少量佣金，但不影響您的購買價格。</p>
+  </div>
+
+</div>
+
+<footer>
+  <p>© 2024 健康食譜網 | <a href="../index.html">回首頁</a> | <a href="#">隱私政策</a></p>
+  <p style="margin-top:6px; font-size:0.78rem;">本站部分連結為聯盟行銷連結，購買時不會增加您的費用，感謝您的支持！</p>
+</footer>
+
+</body>
+</html>

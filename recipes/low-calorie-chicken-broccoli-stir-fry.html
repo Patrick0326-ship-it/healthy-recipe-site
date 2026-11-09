@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>低卡雞胸肉炒花椰菜｜減脂必學懶人料理 | 健康廚房 | 美味減脂食譜</title>
+  <meta name="description" content="簡單減脂料理食譜，雞胸肉炒花椰菜只需15分鐘，每份僅280大卡，高蛋白低脂肪，是減重健身期間的絕佳選擇。">
+  <meta name="keywords" content="減脂食譜, 雞胸肉料理, 低卡晚餐, 健康炒菜, 高蛋白餐點">
+  <meta property="og:title" content="低卡雞胸肉炒花椰菜｜減脂必學懶人料理">
+  <meta property="og:description" content="簡單減脂料理食譜，雞胸肉炒花椰菜只需15分鐘，每份僅280大卡，高蛋白低脂肪，是減重健身期間的絕佳選擇。">
+  <meta property="og:type" content="article">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Noto Sans TC', 'Microsoft JhengHei', sans-serif; background: #f8f9fa; color: #333; line-height: 1.7; }
+a { color: #e67e22; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* Header */
+header { background: linear-gradient(135deg, #27ae60, #2ecc71); color: white; padding: 20px 0; box-shadow: 0 2px 10px rgba(0,0,0,0.15); }
+header .inner { max-width: 1100px; margin: 0 auto; padding: 0 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; }
+header h1 { font-size: 1.6rem; font-weight: 700; }
+header p { font-size: 0.9rem; opacity: 0.9; }
+nav a { color: white; margin-left: 20px; font-size: 0.95rem; opacity: 0.9; }
+nav a:hover { opacity: 1; text-decoration: none; border-bottom: 2px solid white; }
+
+/* Hero */
+.hero { background: linear-gradient(135deg, #f39c12, #e67e22); color: white; text-align: center; padding: 60px 20px; }
+.hero h2 { font-size: 2.2rem; margin-bottom: 15px; }
+.hero p { font-size: 1.1rem; opacity: 0.9; max-width: 600px; margin: 0 auto; }
+
+/* Container */
+.container { max-width: 1100px; margin: 0 auto; padding: 40px 20px; }
+
+/* Recipe Grid */
+.recipe-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 25px; margin-top: 30px; }
+.recipe-card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 3px 15px rgba(0,0,0,0.08); transition: transform 0.2s, box-shadow 0.2s; }
+.recipe-card:hover { transform: translateY(-4px); box-shadow: 0 8px 25px rgba(0,0,0,0.12); }
+.card-header { background: linear-gradient(135deg, #27ae60, #2ecc71); padding: 20px; color: white; }
+.card-header .category-badge { font-size: 0.75rem; background: rgba(255,255,255,0.25); padding: 3px 10px; border-radius: 20px; display: inline-block; margin-bottom: 8px; }
+.card-header h3 { font-size: 1.05rem; line-height: 1.4; }
+.card-body { padding: 18px; }
+.card-body p { font-size: 0.9rem; color: #666; margin-bottom: 12px; }
+.card-meta { display: flex; gap: 15px; font-size: 0.8rem; color: #888; margin-bottom: 14px; flex-wrap: wrap; }
+.card-meta span { display: flex; align-items: center; gap: 4px; }
+.nutrition-mini { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 14px; }
+.nutrition-mini .badge { background: #f0f9f4; color: #27ae60; padding: 3px 10px; border-radius: 20px; font-size: 0.78rem; font-weight: 600; }
+.btn-read { display: block; text-align: center; background: #e67e22; color: white; padding: 10px; border-radius: 8px; font-size: 0.9rem; font-weight: 600; }
+.btn-read:hover { background: #d35400; text-decoration: none; }
+
+/* Recipe Page */
+.recipe-page { max-width: 800px; margin: 40px auto; padding: 0 20px; }
+.recipe-page h1 { font-size: 2rem; color: #2c3e50; margin-bottom: 10px; line-height: 1.3; }
+.recipe-description { font-size: 1.1rem; color: #555; margin-bottom: 25px; padding: 15px; background: #f0f9f4; border-left: 4px solid #27ae60; border-radius: 0 8px 8px 0; }
+.recipe-meta-bar { display: flex; gap: 20px; flex-wrap: wrap; background: white; padding: 15px 20px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.06); margin-bottom: 30px; }
+.recipe-meta-bar .meta-item { text-align: center; }
+.recipe-meta-bar .meta-item .label { font-size: 0.75rem; color: #888; display: block; }
+.recipe-meta-bar .meta-item .value { font-size: 1rem; font-weight: 700; color: #27ae60; }
+
+.nutrition-box { background: white; border-radius: 10px; padding: 20px; margin-bottom: 25px; box-shadow: 0 2px 10px rgba(0,0,0,0.06); }
+.nutrition-box h3 { margin-bottom: 15px; color: #2c3e50; }
+.nutrition-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+.nutrition-grid .n-item { text-align: center; background: #f0f9f4; padding: 12px; border-radius: 8px; }
+.nutrition-grid .n-item .n-label { font-size: 0.75rem; color: #666; display: block; }
+.nutrition-grid .n-item .n-value { font-size: 1.2rem; font-weight: 700; color: #27ae60; }
+
+.section-box { background: white; border-radius: 10px; padding: 25px; margin-bottom: 25px; box-shadow: 0 2px 10px rgba(0,0,0,0.06); }
+.section-box h2 { font-size: 1.3rem; color: #2c3e50; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 2px solid #e8f5e9; }
+
+/* Ingredients */
+.ingredients-list { list-style: none; }
+.ingredients-list li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; display: flex; justify-content: space-between; font-size: 0.95rem; }
+.ingredients-list li:last-child { border-bottom: none; }
+.ingredients-list .amount { font-weight: 600; color: #27ae60; }
+.ingredients-list .note { font-size: 0.8rem; color: #888; margin-top: 2px; display: block; }
+
+/* Steps */
+.steps-list { list-style: none; }
+.steps-list li { display: flex; gap: 15px; margin-bottom: 18px; align-items: flex-start; }
+.step-num { background: #27ae60; color: white; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.9rem; flex-shrink: 0; margin-top: 2px; }
+.step-text { font-size: 0.95rem; line-height: 1.6; }
+
+/* Tips */
+.tips-list { list-style: none; }
+.tips-list li { padding: 10px 0 10px 30px; position: relative; border-bottom: 1px solid #f0f0f0; font-size: 0.95rem; }
+.tips-list li:before { content: "💡"; position: absolute; left: 0; }
+.tips-list li:last-child { border-bottom: none; }
+
+/* Why Healthy */
+.why-healthy { font-size: 0.95rem; line-height: 1.8; color: #555; }
+
+/* Affiliate Box */
+.affiliate-box { background: linear-gradient(135deg, #fff8e1, #fffde7); border: 1px solid #ffe082; border-radius: 12px; padding: 25px; margin-bottom: 25px; }
+.affiliate-box h2 { font-size: 1.2rem; color: #e67e22; margin-bottom: 18px; }
+.affiliate-products { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 15px; }
+.affiliate-product { background: white; border-radius: 10px; padding: 15px; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+.product-tag { font-size: 0.75rem; background: #e67e22; color: white; padding: 2px 8px; border-radius: 10px; display: inline-block; margin-bottom: 8px; }
+.product-name { font-size: 0.9rem; font-weight: 600; color: #333; margin-bottom: 5px; display: block; }
+.product-price { font-size: 0.8rem; color: #888; margin-bottom: 10px; display: block; }
+.product-platform { font-size: 0.75rem; color: #27ae60; display: block; margin-bottom: 10px; }
+.btn-buy { background: #e67e22; color: white; padding: 8px 15px; border-radius: 8px; font-size: 0.85rem; font-weight: 600; display: inline-block; }
+.btn-buy:hover { background: #d35400; text-decoration: none; }
+
+/* Section Title */
+.section-title { font-size: 1.6rem; color: #2c3e50; margin-bottom: 5px; }
+.section-subtitle { color: #888; font-size: 0.95rem; margin-bottom: 30px; }
+
+/* Footer */
+footer { background: #2c3e50; color: #aaa; text-align: center; padding: 30px 20px; margin-top: 40px; font-size: 0.85rem; }
+footer a { color: #aaa; }
+.disclaimer { font-size: 0.78rem; color: #777; margin-top: 8px; }
+
+/* Responsive */
+@media (max-width: 600px) {
+    .hero h2 { font-size: 1.6rem; }
+    .nutrition-grid { grid-template-columns: repeat(2, 1fr); }
+    .recipe-meta-bar { justify-content: center; }
+    .affiliate-products { grid-template-columns: 1fr 1fr; }
+}
+</style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Recipe",
+    "name": "低卡雞胸肉炒花椰菜｜減脂必學懶人料理",
+    "description": "簡單減脂料理食譜，雞胸肉炒花椰菜只需15分鐘，每份僅280大卡，高蛋白低脂肪，是減重健身期間的絕佳選擇。",
+    "prepTime": "PT5M",
+    "cookTime": "PT10M",
+    "recipeYield": "2人份",
+    "nutrition": {
+      "@type": "NutritionInformation",
+      "calories": "280 大卡"
+    }
+  }
+  </script>
+</head>
+<body>
+<header>
+  <div class="inner">
+    <div>
+      <h1>🥗 健康廚房 | 美味減脂食譜</h1>
+      <p>每週更新健康食譜，幫你輕鬆吃出好身材！</p>
+    </div>
+    <nav>
+      <a href="/">首頁</a>
+      <a href="/recipes/">所有食譜</a>
+    </nav>
+  </div>
+</header>
+
+<div class="recipe-page">
+  <p style="font-size:0.85rem;color:#888;margin:20px 0 10px;">
+    <a href="/">首頁</a> › <a href="/recipes/">食譜</a> › 低卡美食
+  </p>
+
+  <h1>低卡雞胸肉炒花椰菜｜減脂必學懶人料理</h1>
+  <div class="recipe-description">15分鐘完成的高蛋白低卡料理，減脂期間最佳選擇，食材簡單好取得。</div>
+
+  <div class="recipe-meta-bar">
+    <div class="meta-item"><span class="label">⏱ 備料</span><span class="value">5分鐘</span></div>
+    <div class="meta-item"><span class="label">🍳 烹飪</span><span class="value">10分鐘</span></div>
+    <div class="meta-item"><span class="label">👥 份量</span><span class="value">2 人份</span></div>
+    <div class="meta-item"><span class="label">🔥 熱量</span><span class="value">280 大卡</span></div>
+    <div class="meta-item"><span class="label">📊 難度</span><span class="value">簡單</span></div>
+  </div>
+
+  <div class="nutrition-box">
+    <h3>📊 每份營養成分</h3>
+    <div class="nutrition-grid">
+      <div class="n-item"><span class="n-label">蛋白質</span><span class="n-value">32g</span></div>
+      <div class="n-item"><span class="n-label">碳水化合物</span><span class="n-value">12g</span></div>
+      <div class="n-item"><span class="n-label">脂肪</span><span class="n-value">6g</span></div>
+      <div class="n-item"><span class="n-label">膳食纖維</span><span class="n-value">4g</span></div>
+    </div>
+  </div>
+
+  <div class="section-box">
+    <h2>🛒 食材清單</h2>
+    <ul class="ingredients-list">
+<li>
+  <div><span>雞胸肉</span><span class="note">切薄片</span></div>
+  <span class="amount">300g</span>
+</li>
+<li>
+  <div><span>花椰菜</span><span class="note">切小朵</span></div>
+  <span class="amount">1顆</span>
+</li>
+<li>
+  <div><span>蒜頭</span><span class="note">切末</span></div>
+  <span class="amount">3瓣</span>
+</li>
+<li>
+  <div><span>橄欖油</span></div>
+  <span class="amount">1湯匙</span>
+</li>
+<li>
+  <div><span>鹽</span></div>
+  <span class="amount">適量</span>
+</li>
+<li>
+  <div><span>黑胡椒</span></div>
+  <span class="amount">適量</span>
+</li>
+<li>
+  <div><span>醬油</span></div>
+  <span class="amount">1湯匙</span>
+</li></ul>
+  </div>
+
+  <div class="section-box">
+    <h2>👩‍🍳 烹飪步驟</h2>
+    <ol class="steps-list">
+<li>
+  <div class="step-num">1</div>
+  <div class="step-text">花椰菜洗淨切小朵，放入滾水中汆燙2分鐘，撈起備用。</div>
+</li>
+<li>
+  <div class="step-num">2</div>
+  <div class="step-text">雞胸肉切薄片，加入醬油、黑胡椒醃製5分鐘。</div>
+</li>
+<li>
+  <div class="step-num">3</div>
+  <div class="step-text">熱鍋加橄欖油，放入蒜末炒香至金黃色。</div>
+</li>
+<li>
+  <div class="step-num">4</div>
+  <div class="step-text">放入雞胸肉大火翻炒3-4分鐘至熟透。</div>
+</li>
+<li>
+  <div class="step-num">5</div>
+  <div class="step-text">加入花椰菜一起翻炒均勻，加鹽調味即可起鍋。</div>
+</li></ol>
+  </div>
+
+  <div class="section-box">
+    <h2>💡 料理小撇步</h2>
+    <ul class="tips-list"><li>雞胸肉不要炒太久，否則口感會柴硬</li><li>花椰菜先汆燙可以縮短炒制時間</li><li>可加入少許香油增添香氣</li></ul>
+  </div>
+
+  <div class="section-box">
+    <h2>🌿 為什麼這道菜有益健康？</h2>
+    <p class="why-healthy">雞胸肉是公認的減脂聖品，每100克僅含165大卡，蛋白質高達31克，有助於維持肌肉量。花椰菜富含維生素C、K和膳食纖維，熱量極低，能增加飽足感，同時提供豐富的抗氧化物質，有助於提升免疫力。橄欖油含有健康的單元不飽和脂肪酸，對心血管健康有益。整體而言，這道料理營養均衡，非常適合減脂期間食用。</p>
+  </div>
+
+  <div class="affiliate-box">
+    <h2>🛍️ 推薦廚具 & 食材（優質推薦）</h2>
+    <div class="affiliate-products">
+<div class="affiliate-product">
+  <span class="product-tag">廚具推薦</span>
+  <span class="product-name">飛利浦健康氣炸鍋</span>
+  <span class="product-price">約 NT$2,500 起</span>
+  <span class="product-platform">📍 momo</span>
+  <a class="btn-buy" href="https://www.momoshop.com.tw/search/searchShop.jsp?keyword=氣炸鍋" target="_blank" rel="nofollow noopener">查看商品 →</a>
+</div>
+<div class="affiliate-product">
+  <span class="product-tag">健康食材</span>
+  <span class="product-name">冷壓初榨橄欖油</span>
+  <span class="product-price">約 NT$450 起</span>
+  <span class="product-platform">📍 momo</span>
+  <a class="btn-buy" href="https://www.momoshop.com.tw/search/searchShop.jsp?keyword=橄欖油" target="_blank" rel="nofollow noopener">查看商品 →</a>
+</div>
+<div class="affiliate-product">
+  <span class="product-tag">備餐工具</span>
+  <span class="product-name">分格備餐保鮮盒組</span>
+  <span class="product-price">約 NT$350 起</span>
+  <span class="product-platform">📍 momo</span>
+  <a class="btn-buy" href="https://www.momoshop.com.tw/search/searchShop.jsp?keyword=備餐保鮮盒" target="_blank" rel="nofollow noopener">查看商品 →</a>
+</div></div>
+  </div>
+</div>
+<footer>
+  <p>© 2026 健康廚房 | 美味減脂食譜 · 每週更新健康食譜</p>
+  <p class="disclaimer">⚠️ 本站部分連結為聯盟行銷連結，點擊購買後本站可能獲得佣金，不影響您的購買價格。</p>
+</footer>
+</body>
+</html>
